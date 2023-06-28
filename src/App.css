@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+img{
+    width: 400px;
+    height: 400px;
+}
+.original_product_header{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.original_product{
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius:20px;
+    justify-content:center ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.speaker{
+    width:400px;
+    height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cpu{
+    height:350px;
 }
 
-.App-link {
-  color: #61dafb;
+.mouse{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard{
+    width:600px;
+    position: relative;
+}
+.joystick{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 100px;
 }
