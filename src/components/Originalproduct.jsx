@@ -5,6 +5,7 @@ import speaker from '../Images/speaker.png'
 import monitor from '../Images/monitor.png'
 import joystick from '../Images/joystick.png'
 import cpu from '../Images/cpu.png'
+import { Link } from 'react-router-dom';
 
 const Originalproduct = () => {
   return (
@@ -21,6 +22,11 @@ const Originalproduct = () => {
                 <img src={keyboard} alt="keyboard" className='keyboard'/>
                 <img src={mouse} alt="mouse" className='mouse'/>
             </div>
+        </div>
+        <div className='orginal_btn_cont'>
+            <button className='original_product_btn'>
+                <Link className='link_original' to="/selectparts">START</Link>
+            </button>
         </div>
     </>
   )
