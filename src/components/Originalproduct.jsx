@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Originalproduct = () => {
   return (
     <>
-        <h1 className='original_product_header'>BIBOX PRODUCT HOUSE</h1>
+        <h1 className='original_product_header header'>BIBOX PRODUCT HOUSE</h1>
         <div className='original_product'>
             <div className='original_row_1'>
                 <img src={speaker} alt="speaker" className='speaker'/>
