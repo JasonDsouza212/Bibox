@@ -8,13 +8,16 @@ function App() {
   const cartItems= useSelector((state)=> state.cart.partsList)
   console.log("these are cart items"+JSON.stringify(cartItems))
   return (
-    <div className="App">
-        <Routes>
-          <Route path='/' element={<Originalproduct/>}/>
-          <Route path='/selectparts' element={<Selectparts/>}/>
-          <Route path='/build' element={<Build/>}/>
-        </Routes>
-    </div>
+        <>
+        <div className='mobile'>THIS APP ONLY WORKS PN DESKTOP</div>
+        <div className="App">
+            <Routes>
+              <Route path='/' element={<Originalproduct/>}/>
+              <Route path='/selectparts' element={<Selectparts/>}/>
+              <Route path='/build' element={<Build/>}/>
+            </Routes>
+        </div>
+        </>
   );
 }
 

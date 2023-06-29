@@ -15,17 +15,14 @@ const Build = () => {
     const dispatch = useDispatch();
     const handleDragOver=(id)=>{
       console.log("Inside")
-      dispatch(cartActions.setActive(id))
+      dispatch(cartActions.setActive({id}))
     }
-    const handleDragstart=()=>{
-        console.log("start")
-    }
-    const isactive=(title)=>{
-      return cartItems.some((item) => item.title === title);
-    }
-const handleDragend=()=>{
-    console.log("end")
-}
+    const isactive = (title) => {
+      const item = cartItems.find((item) =>{
+        return item.title == title});
+      return item && item.isSelected===true;
+    };
+    
   return (
         <div className="select-parts-page">
           <div className="cards-container">
@@ -34,10 +31,7 @@ const handleDragend=()=>{
             <div 
             key={item.id}
             draggable
-            onDragOver={handleDragOver(item.id)}
-            onDragEnter={handleDragOver(item.id)}
-            onDragLeave={handleDragOver(item.id)}
-            onDrop={handleDragOver(item.id)}
+            onClick={handleDragOver(item.id)}
             >
                 <li key={item.id}>
                 <Cartitem
@@ -51,14 +45,14 @@ const handleDragend=()=>{
           </ul>
           </div>
           <div className="image-section">
-            <h1 className="product-header">BIBOX PRODUCT HOUSE</h1>
+            <h1 className="product-header header">BIBOX PRODUCT HOUSE</h1>
             <div className="product-images">
-              <img src={speaker} alt="Speaker" className="product-image"  style={isactive('speaker') ? { border: '3px solid green' } : {}}  />
-              <img src={monitor} alt="Monitor" className="product-image" style={isactive('monitor') ? { border: '3px solid green' } : {}} />
-              <img src={cpu} alt="CPU" className="product-image" style={isactive('cpu') ? { border: '3px solid green' } : {}} />
-              <img src={joystick} alt="Joystick" className="product-image" style={isactive('joystick') ? { border: '3px solid green' } : {}} />
-              <img src={keyboard} alt="Keyboard" className="product-image" style={isactive('keyboard') ? { border: '3px solid green' } : {}} />
-              <img src={mouse} alt="Mouse" className="product-image" style={isactive('mouse') ? { border: '3px solid green' } : {}} />
+              <img src={speaker} alt="Speaker" className="product-image"  style={isactive('speaker')===true  ? { border: '3px solid green' } : {}}  />
+              <img src={monitor} alt="Monitor" className="product-image" style={isactive('monitor')===true  ? { border: '3px solid green' } : {}} />
+              <img src={cpu} alt="CPU" className="product-image" style={isactive('cpu')===true  ? { border: '3px solid green' } : {}} />
+              <img src={joystick} alt="Joystick" className="product-image" style={isactive('joystick')===true ? { border: '3px solid green' } : {}} />
+              <img src={keyboard} alt="Keyboard" className="product-image" style={isactive('keyboard')===true  ? { border: '3px solid green' } : {}} />
+              <img src={mouse} alt="Mouse" className="product-image" style={isactive('mouse')===true  ? { border: '3px solid green' } : {}} />
               
             </div>
             <div className="start-button-container">

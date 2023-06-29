@@ -20,17 +20,18 @@ const cartSlice = createSlice({
           image: newItem.image,
           title: newItem.title,
           data: newItem.data,
-          isSelected: false
+          isselected: false
         });
       }
     },
     setActive(state, action) {
       const newItem = action.payload;
-      const existingItem = state.partsList.find((item) => item.id === newItem);
+      const existingItem = state.partsList.find(item => item.id === newItem);
       if (existingItem) {
-        existingItem.isSelected = true;
+        existingItem.isselected = true;
       }
     }
+    
   }
 });
 

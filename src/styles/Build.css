@@ -1,4 +1,4 @@
-/* .select-parts-page {
+.select-parts-page {
     display: flex;
     justify-content: space-between;
   }
@@ -9,21 +9,6 @@
     padding-bottom: 20px;
   }
   
-  .card {
-    width: 100%;
-    border: 5px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .card img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-  }
   
   .card-content {
     padding: 10px;
@@ -59,7 +44,7 @@
   
   .product-image {
     width: 350px;
-    height: 350px;
+    height: 300px;
     margin: 10px;
   }
   
@@ -84,4 +69,4 @@
     color: rgb(231, 231, 231);
     font-weight: bold;
   }
-   */
+  
