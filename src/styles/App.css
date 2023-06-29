@@ -1,6 +1,7 @@
 @import url('./card.css');
 @import url('./Cart.css');
 @import url('./Build.css');
+@import url('./notfound.css');
 .mobile{
     display: none;
 }
@@ -71,6 +72,12 @@ img{
     text-decoration: none;
     color: rgb(231, 231, 231); 
     font-weight: bold;
+}
+.fin{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border: none;
 }
 
 @media (max-width: 1850px) {

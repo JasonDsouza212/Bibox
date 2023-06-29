@@ -24,7 +24,7 @@ const Originalproduct = () => {
             </div>
         </div>
         <div className='orginal_btn_cont'>
-            <button className='original_product_btn'>
+            <button className='original_product_btn btn'>
                 <Link className='link_original' to="/selectparts">START</Link>
             </button>
         </div>
