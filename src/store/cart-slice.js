@@ -30,6 +30,9 @@ const cartSlice = createSlice({
       if (existingItem) {
         existingItem.isselected = true;
       }
+    },
+    setReset(state){
+      state.partsList=[]
     }
     
   }
