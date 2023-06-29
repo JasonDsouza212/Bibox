@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import parts from '../Data/parts';
+import SelectPartcard from './SelectPartcard';
+import Cartitems from './Cartitems';
 
 const Selectparts = () => {
   return (
@@ -8,19 +10,18 @@ const Selectparts = () => {
         <h1 className='all_parts_header header'>ALL PARTS</h1>
         <div class="card-container">
         {parts.map((part)=>(
-            <div class="card" key={part.id}>
-            <img src={part.image} alt={part.title} />
-            <div class="card-content">
-                <h3 class="card-title">{part.title}</h3>
-                <p class="card-paragraph">{part.data}</p>
-                <button class="card-button">+</button>
-            </div>
-            </div>
+            <SelectPartcard
+                id={part.id}
+                image={part.image}
+                title={part.title}
+                data={part.data}
+            />
             ))}
         </div>
+        <Cartitems/>
         <div className='orginal_btn_cont'>
             <button className='original_product_btn'>
-                <Link className='link_original' to="/selectparts">BUILD</Link>
+                <Link className='link_original' to="/build">BUILD</Link>
             </button>
         </div>
     </>

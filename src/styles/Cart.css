@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+  }
+  li {
+    padding: 10px;
+  }
+  .cartItem h3{
+    color: black;
+    text-transform: uppercase;
+  }
+  .cartItem p{
+    color: black;
+    text-transform: uppercase;
+  }
+  .cart_img{
+    width: 60px;
+    height: 60px;
+  }
+  .cart-container {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    height: 400px;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #cacaca;
+    color: #fbeaeb;
+  }
+

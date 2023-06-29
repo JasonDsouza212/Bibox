@@ -1,4 +1,6 @@
 @import url('./card.css');
+@import url('./Cart.css');
+@import url('./Build.css');
 :root{
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 }
