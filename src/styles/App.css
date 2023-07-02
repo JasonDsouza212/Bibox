@@ -34,6 +34,7 @@ img{
 
 .cpu{
     height:300px;
+    width: 250px;
 }
 
 .mouse{
@@ -74,13 +75,13 @@ img{
     font-weight: bold;
 }
 .fin{
-    width:100%;
+    width:110%;
     display: flex;
     justify-content: center;
     border: none;
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1700px) {
     .App{
         display: none;
     }
